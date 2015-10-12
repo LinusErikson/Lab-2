@@ -10,7 +10,7 @@ namespace Lab_2
     {
         static void Main(string[] args)
         {
-            
+          
         }
         static void BoilingWater()
         {
@@ -68,6 +68,52 @@ namespace Lab_2
                     Console.WriteLine("There are no ponys for this weight class");
                 }
             }
+        }
+
+        static void Bath()
+        {
+            
+
+            Console.WriteLine("Is there water?");
+            string IsThereWater = Console.ReadLine();
+
+            Console.WriteLine("How many degrees is the water?");
+            int WaterDegree = Convert.ToInt32(Console.ReadLine());
+
+            if (IsThereWater == "yes" && WaterDegree >= 30)
+            {
+                Console.WriteLine("You can take a bath!");
+            }
+            else if (IsThereWater == "no" || WaterDegree < 30)
+            {
+                Console.WriteLine("You can't take a bath");
+            }
+
+
+            //Denna versionen frågar inte efter grader om IsThereWater är "nej".
+
+            //Console.WriteLine("Is there water?");
+            //string IsThereWater = Console.ReadLine();
+
+            //if (IsThereWater == "yes")
+            //{
+            //    Console.WriteLine("How many degrees is the water?");
+            //    int WaterDegree = Convert.ToInt32(Console.ReadLine());
+
+            //    if (WaterDegree >= 30)
+            //    {
+            //        Console.WriteLine("You can take a bath");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("You can't take a bath");
+            //    }
+            //}
+            //else 
+            //{
+            //    Console.WriteLine("You can't take a bath");
+            //}
+
         }
 
     }

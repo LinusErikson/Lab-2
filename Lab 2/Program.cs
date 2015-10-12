@@ -10,7 +10,7 @@ namespace Lab_2
     {
         static void Main(string[] args)
         {
-           
+            FizzBuzz();
         }
         static void BoilingWater()
         {
@@ -129,6 +129,34 @@ namespace Lab_2
             //(2) "int  i = 0" kollas en gång. "i<10" kollas 11 gånger. "i++" kollas 10 gånger och allt inuti loopen körs 10 gånger.
         }
 
+        static void FizzBuzz()
+        {
+            //Skriv ut 1-100
+            //delbara med 3(ingen rest) skriv ut Fizz
+            //delbara med 5(ingen rest) skriv ut Buzz
+            //delbara med både 3 och 5 skriv ut FizzBuzz (som inte heller lämnar rest antar jag?)
+
+            for (int i = 1; i <= 100; i++)
+            {
+                if (i % 3 == 0)
+                {
+                    Console.WriteLine("Fizz");
+                }
+                else if (i % 5 == 0)
+                {
+                    Console.WriteLine("Buzz");
+                }
+                else if (i % 3 == 0 && i % 5 == 0)
+                {
+                    Console.WriteLine("FizzBuzz!");
+                }
+                else
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            //Det finns inget tal som är jämnt delbart med 3 och 5. iallafall inte medllan 1-100.
+        }
     }
 
 }

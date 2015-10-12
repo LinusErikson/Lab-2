@@ -10,7 +10,7 @@ namespace Lab_2
     {
         static void Main(string[] args)
         {
-            FizzBuzz();
+            CardDeck();
         }
         static void BoilingWater()
         {
@@ -157,6 +157,66 @@ namespace Lab_2
             }
             //Det finns inget tal som är jämnt delbart med 3 och 5. iallafall inte medllan 1-100.
         }
+
+        //CardDeck + metod
+        #region CardDeck
+
+       
+        static void CardDeck()
+        {
+            for (int suit = 1; suit < 5; suit++)
+            {
+   
+                for (int j = 1; j < 14; j++)
+                {
+                    
+                    if (suit == 1)
+                    {
+                        Console.WriteLine(FaceCards(j) + " Hearts");
+                    }
+                    else if (suit == 2)
+                    {
+                        Console.WriteLine(FaceCards(j) + " Spades");
+                    }
+                    else if (suit == 3)
+                    {
+                        Console.WriteLine(FaceCards(j) + " Diamonds");
+                    }
+                    else if (suit == 4)
+                    {
+                        Console.WriteLine(FaceCards(j) + " Clubs");
+                    }
+                }
+            }
+            
+        }
+        //En metod som skriver ut klädda kort med text istället för siffror.
+        static string FaceCards(int x)
+        {
+            string Value = x.ToString();
+            
+            if (x == 11)
+            {
+                 Value = "Jack of ";
+                
+            }
+            else if (x == 12)
+            {
+                Value = "Queen of ";
+            }
+            else if (x == 13)
+            {
+                Value = "King of ";
+            }
+            else if (x == 1)
+            {
+                Value = "Ace of ";
+            }
+
+            return Value;
+           
+        }
+        #endregion 
     }
 
 }

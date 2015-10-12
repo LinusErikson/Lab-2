@@ -10,7 +10,7 @@ namespace Lab_2
     {
         static void Main(string[] args)
         {
-            
+            MjauMachine();
         }
         static void BoilingWater()
         {
@@ -232,6 +232,38 @@ namespace Lab_2
                 
             }
             Console.WriteLine("You're not a duck...");
+        }
+
+        static void MjauMachine()
+        {
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("How many Mjaus do you want?");
+                    int Mjaus = int.Parse(Console.ReadLine());
+                    if (Mjaus != 0)
+                    {
+                        for (int i = 0; i < Mjaus; i++)
+                        {
+
+                            Console.Write("mjau ");
+
+                        }
+                        Console.WriteLine();
+                    }
+                    else
+                    {
+                        Console.WriteLine(":(");
+                        break;
+                    }
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Wrong input!");
+                }
+     
+            }
         }
 
     }

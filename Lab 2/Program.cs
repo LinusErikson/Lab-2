@@ -10,7 +10,7 @@ namespace Lab_2
     {
         static void Main(string[] args)
         {
-          
+           
         }
         static void BoilingWater()
         {
@@ -114,6 +114,19 @@ namespace Lab_2
             //    Console.WriteLine("You can't take a bath");
             //}
 
+        }
+
+        static void ForLoop()
+        {
+            int sum = 0;
+
+            for (int i = 0; i < 10; i++)
+            {
+                sum += i;
+                Console.WriteLine(sum);
+            }
+            //(1) "int i = 0" kollas först. Sedan "i<10". Sedan går den in i loopen och kör där och allra sist kör den "i++"
+            //(2) "int  i = 0" kollas en gång. "i<10" kollas 11 gånger. "i++" kollas 10 gånger och allt inuti loopen körs 10 gånger.
         }
 
     }

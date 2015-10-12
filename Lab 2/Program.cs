@@ -10,7 +10,7 @@ namespace Lab_2
     {
         static void Main(string[] args)
         {
-            MjauMachine();
+           
         }
         static void BoilingWater()
         {
@@ -266,6 +266,114 @@ namespace Lab_2
             }
         }
 
-    }
+        static void Part4AnyLoop()
+        {
+
+            Console.WriteLine("Number of rows?");
+            int rows = int.Parse(Console.ReadLine());
+            Console.WriteLine("Number of columns?");
+            int columns = int.Parse(Console.ReadLine());
+
+            #region Loop A
+
+            //A
+            //for (int i = 0; i < rows; i++)
+            //{
+            //    for (int j = 0; j < columns; j++)
+            //    {
+            //        Console.Write("o");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            #endregion
+            #region Loop B
+            //for (int i = 0; i < rows; i++)
+            //{
+            //    for (int j = 0; j < columns; j++)
+            //    {
+            //        Console.Write("o");
+
+            //    }
+            //    Console.WriteLine();
+            //    columns--;
+            //} 
+
+            #endregion
+            #region Loop C
+            //for (int i = 0; i < rows; i++)
+            //{
+            //    for (int j = 0; j < columns; j++)
+            //    {
+            //        if (j % 2 == 0)
+            //        {
+            //            Console.Write("x");
+            //        }
+            //        else
+            //        {
+            //            Console.Write("o");
+            //        }
+            //    }
+            //    Console.WriteLine();
+            //}
+            #endregion
+            #region Loop D
+            //for (int i = 0; i < rows; i++)
+            //{
+            //    for (int j = 0; j < columns; j++)
+            //    {
+            //        if (i %2 != 0)
+            //        {
+            //            Console.Write("o");
+            //        }
+            //        else
+            //        {
+            //            Console.Write("x");
+            //        }
+            //    }
+            //    Console.WriteLine();
+            //}
+            #endregion
+            #region Loop F
+            //for (int i = 0; i < rows; i++)
+            //{
+            //    for (int j = 0; j < columns; j++)
+            //    {
+            //        if (j == i)
+            //        {
+            //            Console.Write("x");
+            //        }
+            //        else
+            //        {
+            //            Console.Write("o");
+            //        }
+
+            //    }
+            //    Console.WriteLine();
+
+            #endregion
+            #region Loop G
+            //for (int i = rows; i > 0; i--)
+            //{
+            //    for (int j = 1; j <= columns; j++)
+            //    {
+                    
+            //        if ( i == j)
+            //        {
+            //            Console.Write("x");
+            //        }
+            //        else
+            //        {
+            //            Console.Write("o");
+            //        }
+
+            //    }
+            //    Console.WriteLine();
+            //}
+            #endregion
+
+        }
+
+        }
 
 }

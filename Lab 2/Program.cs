@@ -10,7 +10,7 @@ namespace Lab_2
     {
         static void Main(string[] args)
         {
-            CardDeck();
+            
         }
         static void BoilingWater()
         {
@@ -190,6 +190,7 @@ namespace Lab_2
             }
             
         }
+
         //En metod som skriver ut klädda kort med text istället för siffror.
         static string FaceCards(int x)
         {
@@ -217,6 +218,22 @@ namespace Lab_2
            
         }
         #endregion 
+
+        //Fråga 3.1
+        //Att använda "while(true)" är riskabelt för att det är stor chans att loopen kommer bli oändlig.
+        //(true) sätter inget bra villkor.
+
+        static void Quack()
+        {
+            Console.WriteLine("Are you a duck?");
+            while (Console.ReadLine().ToUpper() == "quack".ToUpper())
+            {
+                Console.WriteLine("quack quack");
+                
+            }
+            Console.WriteLine("You're not a duck...");
+        }
+
     }
 
 }

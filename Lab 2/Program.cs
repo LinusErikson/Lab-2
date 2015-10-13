@@ -10,7 +10,7 @@ namespace Lab_2
     {
         static void Main(string[] args)
         {
-           
+            
         }
         static void BoilingWater()
         {
@@ -138,7 +138,12 @@ namespace Lab_2
 
             for (int i = 1; i <= 100; i++)
             {
-                if (i % 3 == 0)
+
+                if (i % 3 == 0 && i % 5 == 0)
+                {
+                    Console.WriteLine("FizzBuzz!");
+                }
+                else if (i % 3 == 0)
                 {
                     Console.WriteLine("Fizz");
                 }
@@ -146,16 +151,13 @@ namespace Lab_2
                 {
                     Console.WriteLine("Buzz");
                 }
-                else if (i % 3 == 0 && i % 5 == 0)
-                {
-                    Console.WriteLine("FizzBuzz!");
-                }
+               
                 else
                 {
                     Console.WriteLine(i);
                 }
             }
-            //Det finns inget tal som är jämnt delbart med 3 och 5. iallafall inte medllan 1-100.
+            
         }
 
         //CardDeck + metod
@@ -164,6 +166,8 @@ namespace Lab_2
        
         static void CardDeck()
         {
+
+           
             for (int suit = 1; suit < 5; suit++)
             {
    
@@ -172,19 +176,19 @@ namespace Lab_2
                     
                     if (suit == 1)
                     {
-                        Console.WriteLine(FaceCards(j) + " Hearts");
+                        Console.WriteLine("Hjärter " + FaceCards(j));
                     }
                     else if (suit == 2)
                     {
-                        Console.WriteLine(FaceCards(j) + " Spades");
+                        Console.WriteLine("Spader " + FaceCards(j));
                     }
                     else if (suit == 3)
                     {
-                        Console.WriteLine(FaceCards(j) + " Diamonds");
+                        Console.WriteLine("Ruter " + FaceCards(j));
                     }
                     else if (suit == 4)
                     {
-                        Console.WriteLine(FaceCards(j) + " Clubs");
+                        Console.WriteLine("Klöver " + FaceCards(j));
                     }
                 }
             }
@@ -198,20 +202,20 @@ namespace Lab_2
             
             if (x == 11)
             {
-                 Value = "Jack of ";
+                 Value = "Knekt";
                 
             }
             else if (x == 12)
             {
-                Value = "Queen of ";
+                Value = "Dam";
             }
             else if (x == 13)
             {
-                Value = "King of ";
+                Value = "Kung";
             }
             else if (x == 1)
             {
-                Value = "Ace of ";
+                Value = "Ess";
             }
 
             return Value;
